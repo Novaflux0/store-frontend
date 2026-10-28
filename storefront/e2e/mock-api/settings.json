@@ -1,0 +1,49 @@
+{
+  "site": {
+    "name": "Agency",
+    "legalName": "Agency Ltd.",
+    "tagline": "Immersive websites and 3D experiences that convert.",
+    "description": "Agency is a digital studio that designs and builds fast, accessible websites, 3D web experiences and brands for ambitious companies.",
+    "email": "hello@agency.com",
+    "replyTime": "We reply within one business day.",
+    "social": []
+  },
+  "navigation": {
+    "header": [
+      { "label": "Home", "href": "/" },
+      { "label": "About Us", "href": "/about" },
+      { "label": "Services", "href": "/services" },
+      { "label": "Our Projects", "href": "/portfolio" },
+      { "label": "Blog", "href": "/blog" }
+    ],
+    "start": [
+      { "label": "Projects", "href": "/portfolio" },
+      { "label": "Services", "href": "/services" }
+    ],
+    "end": [{ "label": "Pricing", "href": "/pricing" }],
+    "more": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Careers", "href": "/careers" }
+    ],
+    "cta": { "label": "Let's Talk", "href": "/contact" },
+    "legal": [
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" },
+      { "label": "Cookies", "href": "/cookies" }
+    ]
+  },
+  "seo": {
+    "titleTemplate": "%s | Agency",
+    "defaultTitle": "Agency",
+    "defaultDescription": "Agency designs and builds fast, accessible websites, 3D web experiences and brands."
+  },
+  "features": {
+    "contactForm": true,
+    "inquiryForm": true,
+    "newsletter": true,
+    "careersApplications": true,
+    "announcement": { "enabled": false, "message": "" }
+  }
+}

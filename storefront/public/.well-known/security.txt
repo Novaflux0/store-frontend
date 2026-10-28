@@ -1,0 +1,5 @@
+# RFC 9116. TODO: replace the placeholder contact and sign the file before launch.
+Contact: mailto:security@agency.com
+Expires: 2027-10-21T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.agency.com/.well-known/security.txt

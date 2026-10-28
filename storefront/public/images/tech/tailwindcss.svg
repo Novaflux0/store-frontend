@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="48" viewBox="0 0 168 48">
+  <g fill="#000"><path d="M10 38C10 18 22 9 40 9c0 20-10 29-30 29z"/></g>
+  <text x="50" y="32" font-family="'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif" font-size="21" font-weight="600" letter-spacing="-0.3" fill="#000">Tailwind CSS</text>
+</svg>

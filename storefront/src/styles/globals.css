@@ -1,0 +1,953 @@
+@import 'tailwindcss';
+
+/* Shared UI package: scan its sources so its utility classes are generated. */
+@source '../../../shared/ui/src';
+
+/* `light:` styles apply under the light theme (dark is the default, see src/lib/theme.ts). */
+@custom-variant light (&:where([data-theme='light'], [data-theme='light'] *));
+
+/*
+ * Design tokens (doc §6.5). Contrast on --color-bg / --color-surface (WCAG 2.2):
+ *   fg 16.8:1 / 15.9:1 · muted 8.0:1 / 7.6:1 · neon-cyan 11.2:1 / 10.6:1
+ *   neon-violet-text 7.4:1 / 7.0:1 · danger 7.5:1 / 7.1:1 · success 11.6:1 / 11.0:1
+ *   border (form-control outlines, non-text) 3.4:1 / 3.2:1 (WCAG 1.4.11 needs 3:1)
+ *   neon-violet (#8b5cf6) is 4.8:1: decorative or large text only.
+ * Navigation bar (always a dark "inverse" bar, in both themes):
+ *   nav-fg on nav 15.0:1 (dark) / 17.5:1 (light) · nav-muted 7.1:1 / 10.2:1
+ *   nav-focus (cyan) and nav-danger (rose) are accents on that bar, also for toasts
+ *   white on cta 5.7:1, on cta-deep 7.1:1
+ * Light theme values are in the `[data-theme='light']` block below.
+ * Fonts: --font-space-grotesk, --font-inter and --font-instrument-serif are set by next/font
+ * in layout.tsx.
+ */
+@theme {
+  --color-bg: #05060a;
+  --color-surface: #0c0f17;
+  --color-surface-raised: #121624;
+  --color-fg: #e8eaf0;
+  --color-muted: #9ba3b4;
+  --color-border: #5b6478;
+  --color-line: #1c2130;
+  --color-neon-cyan: #22d3ee;
+  --color-neon-violet: #8b5cf6;
+  --color-neon-violet-text: #a78bfa;
+  --color-danger: #fb7185;
+  --color-success: #4ade80;
+
+  --color-nav: #121624;
+  --color-nav-fg: #e8eaf0;
+  --color-nav-muted: #9ba3b4;
+  --color-nav-edge: color-mix(in oklab, #22d3ee 40%, transparent);
+  --color-nav-focus: #22d3ee;
+  --color-nav-danger: #fb7185;
+  /* Gooey current-item pill on the bar and the text inside it (GooeyNav reference colours). */
+  --color-nav-pill: #f4f4f5;
+  --color-nav-pill-ink: #18161d;
+  --color-cta: #7c3aed;
+  --color-cta-deep: #6d28d9;
+
+  --font-display: var(--font-space-grotesk), 'Space Grotesk', system-ui, sans-serif;
+  --font-body: var(--font-inter), 'Inter', system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), 'Instrument Serif', Georgia, serif;
+  --font-sans: var(--font-body);
+
+  --ease-futuristic: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* The light Figma design's page and text colours (home hero surroundings, logos and stats). */
+@theme {
+  --color-paper: #fafffd;
+  --color-ink: #0f0f0f;
+}
+
+/*
+ * Home page fonts from the Figma design (components/sections/hero/hero-fonts.ts).
+ * Inline because the next/font variables are set on the sections that use them, not
+ * on <html>.
+ */
+@theme inline {
+  --font-hero: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
+  --font-hero-serif: var(--font-vollkorn), 'Vollkorn', Georgia, serif;
+  --font-hero-display: 'ZT Nature', var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
+  /* "Why choose us" (components/sections/home/why-fonts.ts). */
+  --font-why: var(--font-outfit), 'Outfit', system-ui, sans-serif;
+  --font-why-heading: var(--font-red-hat), 'Red Hat Display', system-ui, sans-serif;
+  --font-why-accent: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  /* "About Us" team (components/sections/home/about-fonts.ts). */
+  --font-about-heading: var(--font-rubik), 'Rubik', system-ui, sans-serif;
+  --font-about-label: var(--font-public-sans), 'Public Sans', system-ui, sans-serif;
+  --font-about-card: var(--font-inter), 'Inter', system-ui, sans-serif;
+  /* FAQ figure tiles (components/sections/home/faq-fonts.ts). */
+  --font-faq-stat: var(--font-jakarta), 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+@layer base {
+  /*
+   * Light theme, set by the head script / ThemeToggle (src/lib/theme.ts). Contrast on
+   * bg / surface (WCAG 2.2): fg 18.1:1 / 19.4:1 · muted 7.3:1 / 7.8:1
+   *   neon-cyan (darkened for light) 5.0:1 / 5.4:1 · neon-violet-text 6.6:1 / 7.1:1
+   *   danger 5.9:1 / 6.3:1 · success 6.7:1 / 7.1:1 · border 3.5:1 / 3.8:1
+   *   bg text on a neon-cyan button 5.0:1
+   */
+  :root[data-theme='light'] {
+    color-scheme: light;
+    --color-bg: #f6f7fb;
+    --color-surface: #ffffff;
+    --color-surface-raised: #eceff5;
+    --color-fg: #0b0d14;
+    --color-muted: #4b5265;
+    --color-border: #7b8397;
+    --color-line: #dfe3eb;
+    --color-neon-cyan: #0e7490;
+    --color-neon-violet: #7c3aed;
+    --color-neon-violet-text: #6d28d9;
+    --color-danger: #be123c;
+    --color-success: #166534;
+
+    --color-nav: #0b0d14;
+    --color-nav-fg: #f1f3f8;
+    --color-nav-muted: #b4bccb;
+    --color-nav-edge: color-mix(in oklab, #22d3ee 55%, transparent);
+  }
+
+  html {
+    color-scheme: dark;
+    background-color: var(--color-bg);
+    -webkit-text-size-adjust: 100%;
+    /*
+     * Keep the fixed bottom navigation clear of anything scrolled into view: the first
+     * invalid field focused after validation, keyboard focus, anchor jumps
+     * (WCAG 2.4.11 Focus Not Obscured). Bar height plus its offset and the raised CTA.
+     */
+    scroll-padding-bottom: 8rem;
+  }
+
+  body {
+    min-height: 100dvh;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-body);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  /* Visible keyboard focus everywhere (WCAG 2.4.7 / 2.4.13). */
+  :focus-visible {
+    outline: 2px solid var(--color-neon-cyan);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--color-neon-cyan) 35%, transparent);
+  }
+}
+
+/*
+ * Spacing scale per screen width:
+ *   --section-y (top and bottom padding of every page section):
+ *     below 375px 40px · 375–767px 48px · 768px 64px · 1024px 80px · 1280px 96px · 1536px 112px
+ *   --gutter (minimum side spacing): 16 · 20 (375px) · 24 (480px) · 32 · 40 · 64 · 80px.
+ *     `Container` (@agency/ui) sets the same scale on itself; this copy is for full-bleed
+ *     blocks outside it, such as the logo strip.
+ */
+@layer base {
+  :root {
+    --section-y: 2.5rem;
+    --gutter: 1rem;
+  }
+
+  @media (min-width: 23.4375rem) {
+    :root {
+      --section-y: 3rem;
+      --gutter: 1.25rem;
+    }
+  }
+
+  @media (min-width: 30rem) {
+    :root {
+      --gutter: 1.5rem;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    :root {
+      --section-y: 4rem;
+      --gutter: 2rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    :root {
+      --section-y: 5rem;
+      --gutter: 2.5rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    :root {
+      --section-y: 6rem;
+      --gutter: 4rem;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    :root {
+      --section-y: 7rem;
+      --gutter: 5rem;
+    }
+  }
+}
+
+@utility section-y {
+  padding-block: var(--section-y);
+}
+
+/* Bottom only: content that follows a page header, which already provides the top. */
+@utility section-b {
+  padding-bottom: var(--section-y);
+}
+
+/* Bottom navigation: the bar is dark in both themes, so focus rings use bright cyan. */
+@utility nav-inverse {
+  & :focus-visible {
+    outline-color: var(--color-nav-focus);
+  }
+}
+
+/*
+ * Mobile tab bar: round notch cut into the top edge, where the Let's Talk button sits.
+ * The circle's centre is 0.75rem above the bar, so the hole ends exactly at the bottom
+ * of the 3.5rem button (centred on the edge): ~10px gap at its sides, nothing below.
+ */
+@utility nav-notch {
+  mask-image: radial-gradient(
+    circle at 50% -0.75rem,
+    transparent 2.5rem,
+    #000 calc(2.5rem + 0.5px)
+  );
+}
+
+/* Edge highlight and lift that follow the bar's shape, including the notch. */
+@utility nav-glow {
+  filter: drop-shadow(0 -1px 0 var(--color-nav-edge)) drop-shadow(0 -10px 24px rgb(0 0 0 / 0.3));
+}
+
+/*
+ * Animated border light for the bottom bar and Back to Top: a cyan highlight circles
+ * the element's rounded edge. Pure CSS (an animated conic gradient masked to a 1.5px
+ * ring), so no JavaScript or WebGL. The host must be positioned. Under reduced motion
+ * the global rule below stops the animation, leaving a still highlight.
+ */
+@property --rim-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes rim-spin {
+  to {
+    --rim-angle: 360deg;
+  }
+}
+
+@utility rim-light {
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: conic-gradient(
+      from var(--rim-angle),
+      transparent 0deg 250deg,
+      color-mix(in oklab, var(--color-nav-focus) 60%, transparent) 300deg,
+      var(--color-nav-focus) 340deg,
+      #ffffff 352deg,
+      var(--color-nav-focus) 360deg
+    );
+    mask:
+      linear-gradient(#000 0 0) content-box exclude,
+      linear-gradient(#000 0 0);
+    animation: rim-spin 4s linear infinite;
+    pointer-events: none;
+  }
+}
+
+/* Lenis smooth scroll (mirrors lenis/dist/lenis.css). */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+
+.lenis [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* The testimonial video player must stay clickable while Lenis is active. */
+.lenis.lenis-smooth [data-video-embed] iframe {
+  pointer-events: auto;
+}
+
+/*
+ * Home page scroll effects. CSS only (no JavaScript, nothing on the main thread);
+ * each one is limited to `prefers-reduced-motion: no-preference`.
+ */
+
+/* Our stack: the hub's mark turns slowly in 3D (the comets are drawn on a canvas). */
+@keyframes stack-spin {
+  to {
+    rotate: y 360deg;
+  }
+}
+
+/* Hero: the 3D bulb can be turned by dragging (only while the 3D scene runs). */
+[data-journey3d] .bulb-drag {
+  cursor: grab;
+}
+
+[data-journey3d] .bulb-drag:active {
+  cursor: grabbing;
+}
+
+/*
+ * FadeIn (components/animation/FadeIn.tsx): the entrance runs in CSS from the first
+ * paint, so content above the fold never waits for JavaScript to become visible (LCP).
+ * `backwards` only applies the start frame; afterwards Motion's inline styles apply.
+ * FadeIn marks elements that start below the fold with data-fade-scroll; those are
+ * revealed by Motion when scrolled into view instead.
+ */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-fade-in]:not([data-fade-scroll]) {
+    animation: fade-in-up 0.7s var(--ease-futuristic) backwards;
+    animation-delay: var(--fade-delay, 0s);
+  }
+}
+
+/*
+ * Home hero (components/sections/hero): stars twinkle out of step, the corner beams
+ * shimmer, the accent word's glow breathes and the badge's lettering turns. Individual
+ * `scale` / `rotate` properties, so they never fight a Tailwind transform.
+ */
+@keyframes hero-twinkle {
+  50% {
+    opacity: 0.35;
+    scale: 0.7;
+  }
+}
+
+@keyframes hero-beam {
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes hero-glow {
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@keyframes hero-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-twinkle {
+    animation: hero-twinkle 3.2s ease-in-out infinite;
+    animation-delay: calc(var(--row-delay, 0s) + var(--twinkle-delay, 0s));
+  }
+
+  .hero-beam {
+    animation: hero-beam 7s ease-in-out infinite;
+    animation-delay: var(--beam-delay, 0s);
+  }
+
+  .hero-glow {
+    animation: hero-glow 4s ease-in-out infinite;
+  }
+
+  .hero-spin {
+    animation: hero-spin 24s linear infinite;
+  }
+}
+
+/*
+ * Products and solutions (IntegrationHub.tsx): pulses of light run along the lines into
+ * the hub, out of step (`--i` is the logo's index); the hub sends out a ripple and the
+ * logos bob. Scrolled into view (`data-hub` from hidden to shown), the hub appears, the
+ * lines draw outwards and the logos pop in one after another. Without motion the
+ * pulses are hidden and everything stands still.
+ */
+@keyframes hub-pulse {
+  from {
+    stroke-dashoffset: -100;
+  }
+
+  55%,
+  to {
+    stroke-dashoffset: 12;
+  }
+}
+
+@keyframes hub-ripple {
+  from {
+    opacity: 0.7;
+    scale: 1;
+  }
+
+  to {
+    opacity: 0;
+    scale: 1.75;
+  }
+}
+
+@keyframes hub-float {
+  50% {
+    translate: 0 -7%;
+  }
+}
+
+.integration-hub .hub-line {
+  opacity: 0.85;
+  stroke-dasharray: 100;
+  transition:
+    stroke-dashoffset 1.1s cubic-bezier(0.16, 1, 0.3, 1) calc(0.35s + var(--i) * 0.04s),
+    stroke-width 0.3s ease;
+}
+
+.integration-hub .hub-pulse {
+  display: none;
+  stroke-dasharray: 12 200;
+  stroke-dashoffset: -100;
+}
+
+.integration-hub .hub-core,
+.integration-hub .hub-logo {
+  transition:
+    opacity 0.6s ease,
+    scale 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.integration-hub .hub-logo {
+  transition-delay: calc(0.7s + var(--i) * 0.05s);
+}
+
+.integration-hub[data-hub='hidden'] .hub-line {
+  stroke-dashoffset: 100;
+}
+
+.integration-hub[data-hub='hidden'] :is(.hub-core, .hub-logo) {
+  opacity: 0;
+  scale: 0.4;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .integration-hub:not([data-hub='hidden']) .hub-pulse {
+    display: inline;
+    animation: hub-pulse 3.6s cubic-bezier(0.55, 0, 0.75, 1) infinite;
+    animation-delay: calc(var(--i) * -0.83s);
+  }
+
+  .integration-hub .hub-ripple {
+    animation: hub-ripple 3.2s ease-out infinite;
+  }
+
+  .integration-hub .hub-float {
+    animation: hub-float 5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * -0.61s);
+  }
+}
+
+/*
+ * The Result (ResultNetwork.tsx): the dots stream along the dotted lines and people
+ * and notes bob, out of step (`--i` is their index). Scrolled into view (`data-net`
+ * from hidden to shown), the lines fade in, the people pop in one after another and
+ * the notes rise into place.
+ */
+@keyframes net-flow {
+  to {
+    stroke-dashoffset: -16.2;
+  }
+}
+
+@keyframes net-float {
+  50% {
+    translate: 0 -8%;
+  }
+}
+
+.result-net .net-link {
+  transition: opacity 0.9s ease calc(var(--i) * 0.08s);
+}
+
+.result-net .net-person,
+.result-net .net-note {
+  transition:
+    opacity 0.6s ease,
+    scale 0.7s cubic-bezier(0.34, 1.56, 0.64, 1),
+    translate 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.result-net .net-person {
+  transition-delay: calc(0.3s + var(--i) * 0.06s);
+}
+
+.result-net .net-note {
+  transition-delay: calc(1s + var(--i) * 0.15s);
+}
+
+.result-net[data-net='hidden'] .net-link {
+  opacity: 0;
+}
+
+.result-net[data-net='hidden'] .net-person {
+  opacity: 0;
+  scale: 0.4;
+}
+
+.result-net[data-net='hidden'] .net-note {
+  opacity: 0;
+  translate: -50% 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .result-net .net-link {
+    animation: net-flow 1.4s linear infinite;
+  }
+
+  .result-net .net-person .net-float {
+    animation: net-float 4.5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * -0.7s);
+  }
+
+  .result-net .net-note .net-float {
+    animation: net-float 6s ease-in-out infinite;
+    animation-delay: calc(var(--i) * -1.9s);
+  }
+}
+
+/* Reviews carousel (TestimonialCarousel.tsx): new review content fades up into place. */
+@keyframes testimonial-in {
+  from {
+    opacity: 0;
+    translate: 0 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .testimonial-in {
+    animation: testimonial-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+/*
+ * About Us team (TeamShowcase.tsx): the open card is wide (--grow 546) and the others
+ * are pills (263), sharing the row by those weights; phones stack them, the open one
+ * tallest. The name panel rises in once its card has opened. Without motion it all
+ * changes at once.
+ */
+.team-card {
+  min-width: 0;
+  height: 7.5rem;
+}
+
+.team-card[data-open] {
+  height: 26rem;
+}
+
+@media (min-width: 48rem) {
+  .team-card,
+  .team-card[data-open] {
+    height: auto;
+    flex: var(--grow) 1 0;
+  }
+}
+
+.team-panel {
+  opacity: 0;
+  translate: 0 1.5rem;
+}
+
+.team-card[data-open] .team-panel {
+  opacity: 1;
+  translate: 0 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .team-card {
+    transition:
+      flex-grow 0.8s cubic-bezier(0.65, 0, 0.35, 1),
+      height 0.8s cubic-bezier(0.65, 0, 0.35, 1),
+      border-radius 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .team-panel {
+    transition:
+      opacity 0.3s ease,
+      translate 0.3s ease;
+  }
+
+  .team-card[data-open] .team-panel {
+    transition:
+      opacity 0.5s ease 0.45s,
+      translate 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.45s;
+  }
+}
+
+/* Home FAQ (HomeFaq.tsx): answers slide open where the browser can animate <details>. */
+@media (prefers-reduced-motion: no-preference) {
+  .faq-item {
+    interpolate-size: allow-keywords;
+  }
+
+  .faq-item::details-content {
+    block-size: 0;
+    overflow: clip;
+    transition:
+      block-size 0.45s cubic-bezier(0.65, 0, 0.35, 1),
+      content-visibility 0.45s allow-discrete;
+  }
+
+  .faq-item[open]::details-content {
+    block-size: auto;
+  }
+}
+
+/*
+ * Home blog row (LatestPosts.tsx): from tablet width one card is open (wider, with its
+ * excerpt and cover) and the rest are folded to their titles. The default card is open
+ * until another is hovered or focused, which then opens instead. Phones show every card
+ * open. Without motion the cards change at once.
+ */
+.blog-card:has(a:focus-visible) {
+  outline: 2px solid #93a12b;
+  outline-offset: 3px;
+}
+
+.blog-card .blog-cover {
+  min-height: 9rem;
+}
+
+@media (min-width: 48rem) {
+  .blog-card {
+    flex: 1 1 0;
+  }
+
+  .blog-card .blog-excerpt,
+  .blog-card .blog-cover {
+    opacity: 0;
+  }
+
+  .blog-card .blog-excerpt {
+    translate: 0 0.75rem;
+  }
+
+  .blog-card .blog-cover {
+    width: 0;
+    min-height: 0;
+  }
+
+  /* The open card: the default one while nothing is hovered or focused, else that one. */
+  .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+  .blog-card:hover,
+  .blog-card:focus-within {
+    flex-grow: 1.9;
+  }
+
+  :is(
+      .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+      .blog-card:hover,
+      .blog-card:focus-within
+    )
+    :is(.blog-excerpt, .blog-cover) {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  :is(
+      .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+      .blog-card:hover,
+      .blog-card:focus-within
+    )
+    .blog-cover {
+    width: 42%;
+  }
+
+  :is(
+      .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+      .blog-card:hover,
+      .blog-card:focus-within
+    )
+    .blog-arrow {
+    border-color: #93a12b;
+    background: #93a12b;
+    color: #fff;
+    rotate: 45deg;
+  }
+
+  :is(
+      .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+      .blog-card:hover,
+      .blog-card:focus-within
+    )
+    .blog-bubbles {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 48rem) {
+  /* The folded cover is clipped away from the left and slightly zoomed. */
+  .blog-card .blog-cover {
+    clip-path: inset(0 0 0 100% round 1rem);
+  }
+
+  .blog-card .blog-cover > * {
+    scale: 1.12;
+  }
+
+  :is(
+      .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+      .blog-card:hover,
+      .blog-card:focus-within
+    )
+    .blog-cover {
+    clip-path: inset(0 round 1rem);
+  }
+
+  :is(
+      .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+      .blog-card:hover,
+      .blog-card:focus-within
+    )
+    .blog-cover
+    > * {
+    scale: 1;
+  }
+}
+
+@media (min-width: 48rem) and (prefers-reduced-motion: no-preference) {
+  .blog-card {
+    transition:
+      flex-grow 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+      translate 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.5s ease;
+  }
+
+  .blog-card:hover {
+    translate: 0 -4px;
+    box-shadow: 0 24px 40px -22px rgb(60 70 20 / 0.45);
+  }
+
+  /* Closing: the excerpt and cover leave quickly, before the card narrows. */
+  .blog-card .blog-cover {
+    transition:
+      width 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+      clip-path 0.35s cubic-bezier(0.4, 0, 1, 1),
+      opacity 0.3s ease;
+  }
+
+  .blog-card .blog-cover > * {
+    transition: scale 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .blog-card .blog-excerpt {
+    transition:
+      opacity 0.25s ease,
+      translate 0.3s ease,
+      filter 0.3s ease;
+  }
+
+  .blog-card .blog-arrow,
+  .blog-card .blog-bubbles {
+    transition:
+      background-color 0.5s ease,
+      border-color 0.5s ease,
+      color 0.5s ease,
+      rotate 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+      opacity 0.5s ease;
+  }
+
+  .blog-card .blog-excerpt {
+    filter: blur(4px);
+  }
+
+  /* Opening: the cover wipes in and settles, then the excerpt rises out of a blur. */
+  :is(
+      .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+      .blog-card:hover,
+      .blog-card:focus-within
+    )
+    .blog-cover {
+    transition:
+      width 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+      clip-path 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s,
+      opacity 0.4s ease 0.15s;
+  }
+
+  :is(
+      .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+      .blog-card:hover,
+      .blog-card:focus-within
+    )
+    .blog-cover
+    > * {
+    transition: scale 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.15s;
+  }
+
+  :is(
+      .blog-card[data-default]:not(.blog-row:has(.blog-card:hover, .blog-card:focus-within) *),
+      .blog-card:hover,
+      .blog-card:focus-within
+    )
+    .blog-excerpt {
+    filter: blur(0);
+    transition:
+      opacity 0.6s ease 0.35s,
+      translate 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.35s,
+      filter 0.6s ease 0.35s;
+  }
+}
+
+/* The cards rise in one after another as the row scrolls into view. */
+@keyframes blog-card-in {
+  from {
+    opacity: 0;
+    translate: 0 2.5rem;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .blog-row > .blog-card {
+      animation: blog-card-in linear both;
+      animation-timeline: view();
+      animation-range: entry calc(var(--i, 0) * 6%) entry calc(60% + var(--i, 0) * 6%);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .stack-spin {
+    animation: stack-spin 6s linear infinite;
+  }
+}
+
+/*
+ * Work Progress: on large, tall-enough screens the section becomes a scroll track and
+ * its content stays pinned while the step cards move through the deck (WorkDeck.tsx
+ * uses the same media query and sets each card's --x, --w, --h, --fs, --o and --z, in
+ * percent of the deck's width). Phones get a plain list, so nothing pins under the
+ * bottom navigation.
+ */
+@keyframes work-current-in {
+  from {
+    opacity: 0;
+    translate: 0 0.5rem;
+  }
+}
+
+@media (min-width: 64rem) and (min-height: 40rem) and (prefers-reduced-motion: no-preference) {
+  .process-track {
+    height: calc(100dvh + var(--steps, 5) * 55dvh);
+  }
+
+  .process-stage {
+    position: sticky;
+    top: 0;
+    display: flex;
+    min-height: 100dvh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .work-current-text {
+    animation: work-current-in 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .work-stage {
+    max-width: min(100%, calc((100dvh - 18rem) / 0.44));
+    margin-inline: auto;
+  }
+
+  .work-deck {
+    position: relative;
+    display: block;
+    height: 44cqw;
+  }
+
+  .work-card {
+    position: absolute;
+    top: calc((19 - var(--h) / 2) * 1cqw);
+    left: calc(var(--x) * 1cqw);
+    z-index: var(--z);
+    width: calc(var(--w) * 1cqw);
+    opacity: var(--o);
+  }
+
+  .work-card-frame {
+    height: calc(var(--h) * 1cqw);
+    aspect-ratio: auto;
+  }
+
+  .work-card-label {
+    margin-top: 1.2cqw;
+    font-size: max(0.7rem, calc(var(--fs) * 1cqw));
+  }
+
+  /* Read out in the list, shown at the top for the current step only. */
+  .work-card-summary {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .work-rail {
+    display: block;
+    right: -2.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* FadeIn: show the final state; Motion's inline opacity/transform are overridden. */
+  [data-fade-in] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

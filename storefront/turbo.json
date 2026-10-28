@@ -1,0 +1,13 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "env": ["NEXT_PUBLIC_*", "FEATURE_*", "VERCEL_ENV"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "test": {
+      "env": ["NEXT_PUBLIC_*"]
+    }
+  }
+}

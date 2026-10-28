@@ -1,0 +1,2892 @@
+[
+  {
+    "type": "page",
+    "slug": "home",
+    "title": "Home",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "hero": {
+        "headline": "Design with purpose. Build with impact.",
+        "subtitle": "Agency is a design-driven digital agency helping startups and enterprises build brands, products, and experiences that convert, scale, and inspire.",
+        "primaryCta": {
+          "label": "Start a project",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "See our work",
+          "href": "/portfolio"
+        },
+        "video": {
+          "youtubeId": "aqz-KE-bpKQ"
+        }
+      },
+      "clients": [
+        {
+          "name": "Northwind",
+          "logo": {
+            "src": "/images/clients/northwind.svg",
+            "alt": "Northwind",
+            "width": 160,
+            "height": 48
+          }
+        },
+        {
+          "name": "Lumen Labs",
+          "logo": {
+            "src": "/images/clients/lumen-labs.svg",
+            "alt": "Lumen Labs",
+            "width": 176,
+            "height": 48
+          }
+        },
+        {
+          "name": "Orbitra",
+          "logo": {
+            "src": "/images/clients/orbitra.svg",
+            "alt": "Orbitra",
+            "width": 144,
+            "height": 48
+          }
+        },
+        {
+          "name": "Halcyon",
+          "logo": {
+            "src": "/images/clients/halcyon.svg",
+            "alt": "Halcyon",
+            "width": 152,
+            "height": 48
+          }
+        },
+        {
+          "name": "Vertex Freight",
+          "logo": {
+            "src": "/images/clients/vertex-freight.svg",
+            "alt": "Vertex Freight",
+            "width": 192,
+            "height": 48
+          }
+        },
+        {
+          "name": "Kinetica",
+          "logo": {
+            "src": "/images/clients/kinetica.svg",
+            "alt": "Kinetica",
+            "width": 152,
+            "height": 48
+          }
+        }
+      ],
+      "solutions": [
+        {
+          "title": "Launch kit",
+          "summary": "A fixed-scope marketing site in four weeks: design system, CMS and analytics included.",
+          "kind": "product"
+        },
+        {
+          "title": "3D product configurator",
+          "summary": "Let buyers try every colour and finish in real time, on any phone.",
+          "kind": "product"
+        },
+        {
+          "title": "Performance rescue",
+          "summary": "We audit a slow site, fix Core Web Vitals and add budgets so it stays fast.",
+          "kind": "solution"
+        }
+      ],
+      "integrations": [
+        {
+          "name": "Figma",
+          "logo": {
+            "src": "/images/integrations/figma.svg",
+            "alt": "Figma",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Shopify",
+          "logo": {
+            "src": "/images/integrations/shopify.svg",
+            "alt": "Shopify",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Slack",
+          "logo": {
+            "src": "/images/integrations/slack.svg",
+            "alt": "Slack",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Notion",
+          "logo": {
+            "src": "/images/integrations/notion.svg",
+            "alt": "Notion",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "WhatsApp",
+          "logo": {
+            "src": "/images/integrations/whatsapp.svg",
+            "alt": "WhatsApp",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Stripe",
+          "logo": {
+            "src": "/images/integrations/stripe.svg",
+            "alt": "Stripe",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Google Drive",
+          "logo": {
+            "src": "/images/integrations/googledrive.svg",
+            "alt": "Google Drive",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "HubSpot",
+          "logo": {
+            "src": "/images/integrations/hubspot.svg",
+            "alt": "HubSpot",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Trello",
+          "logo": {
+            "src": "/images/integrations/trello.svg",
+            "alt": "Trello",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Webflow",
+          "logo": {
+            "src": "/images/integrations/webflow.svg",
+            "alt": "Webflow",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Docker",
+          "logo": {
+            "src": "/images/integrations/docker.svg",
+            "alt": "Docker",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "PostgreSQL",
+          "logo": {
+            "src": "/images/integrations/postgresql.svg",
+            "alt": "PostgreSQL",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Airtable",
+          "logo": {
+            "src": "/images/integrations/airtable.svg",
+            "alt": "Airtable",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Supabase",
+          "logo": {
+            "src": "/images/integrations/supabase.svg",
+            "alt": "Supabase",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Google Analytics",
+          "logo": {
+            "src": "/images/integrations/googleanalytics.svg",
+            "alt": "Google Analytics",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "GitHub",
+          "logo": {
+            "src": "/images/integrations/github.svg",
+            "alt": "GitHub",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Discord",
+          "logo": {
+            "src": "/images/integrations/discord.svg",
+            "alt": "Discord",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "GitLab",
+          "logo": {
+            "src": "/images/integrations/gitlab.svg",
+            "alt": "GitLab",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "X",
+          "logo": {
+            "src": "/images/integrations/x.svg",
+            "alt": "X",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "Framer",
+          "logo": {
+            "src": "/images/integrations/framer.svg",
+            "alt": "Framer",
+            "width": 48,
+            "height": 48
+          }
+        }
+      ],
+      "result": {
+        "eyebrow": "The Result",
+        "title": "Solution here",
+        "people": [
+          {
+            "name": "Daniel Kim",
+            "photo": {
+              "src": "/images/people/person-01.svg",
+              "alt": "Daniel Kim",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Amara Okafor",
+            "photo": {
+              "src": "/images/people/person-02.svg",
+              "alt": "Amara Okafor",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Omar Haddad",
+            "photo": {
+              "src": "/images/people/person-03.svg",
+              "alt": "Omar Haddad",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Peter Novak",
+            "photo": {
+              "src": "/images/people/person-04.svg",
+              "alt": "Peter Novak",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Ravi Mehta",
+            "photo": {
+              "src": "/images/people/person-05.svg",
+              "alt": "Ravi Mehta",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Elena Rossi",
+            "photo": {
+              "src": "/images/people/person-06.svg",
+              "alt": "Elena Rossi",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Mei Chen",
+            "photo": {
+              "src": "/images/people/person-07.svg",
+              "alt": "Mei Chen",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Sofia Alvarez",
+            "photo": {
+              "src": "/images/testimonials/sofia-alvarez.svg",
+              "alt": "Sofia Alvarez",
+              "width": 600,
+              "height": 800
+            }
+          },
+          {
+            "name": "Kwame Mensah",
+            "photo": {
+              "src": "/images/people/person-09.svg",
+              "alt": "Kwame Mensah",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Lucas Brandt",
+            "photo": {
+              "src": "/images/people/person-10.svg",
+              "alt": "Lucas Brandt",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Samuel Adeyemi",
+            "photo": {
+              "src": "/images/people/person-11.svg",
+              "alt": "Samuel Adeyemi",
+              "width": 96,
+              "height": 96
+            }
+          },
+          {
+            "name": "Priya Nair",
+            "photo": {
+              "src": "/images/testimonials/priya-natarajan.svg",
+              "alt": "Priya Nair",
+              "width": 600,
+              "height": 800
+            }
+          },
+          {
+            "name": "Hannah Berg",
+            "photo": {
+              "src": "/images/testimonials/marta-kowalski.svg",
+              "alt": "Hannah Berg",
+              "width": 600,
+              "height": 800
+            }
+          },
+          {
+            "name": "Diego Morales",
+            "photo": {
+              "src": "/images/people/person-14.svg",
+              "alt": "Diego Morales",
+              "width": 96,
+              "height": 96
+            }
+          }
+        ],
+        "notes": [
+          {
+            "label": "Designs look great! 👍"
+          },
+          {
+            "label": "Q2 Project Plan",
+            "icon": {
+              "src": "/images/integrations/asana.svg",
+              "alt": "Asana",
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "label": "Market Trends",
+            "icon": {
+              "src": "/images/integrations/googledrive.svg",
+              "alt": "Google Drive",
+              "width": 48,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": 120,
+          "suffix": "+",
+          "label": "Projects delivered"
+        },
+        {
+          "value": 98,
+          "suffix": "%",
+          "label": "Client satisfaction"
+        },
+        {
+          "value": 4.9,
+          "decimals": 1,
+          "label": "Average review score"
+        },
+        {
+          "value": 12,
+          "label": "Countries served"
+        }
+      ],
+      "process": [
+        {
+          "title": "Discover",
+          "summary": "Workshops and research to agree on goals, audience and what success looks like.",
+          "duration": "1 week",
+          "image": {
+            "src": "/images/process/discover.svg",
+            "alt": "Discover: a violet orb in a dark room",
+            "width": 1200,
+            "height": 800
+          }
+        },
+        {
+          "title": "Design",
+          "summary": "Wireframes, a design system and clickable prototypes you can test with real users.",
+          "duration": "2 to 3 weeks",
+          "image": {
+            "src": "/images/process/design.svg",
+            "alt": "Design: an orange orb in a dark room",
+            "width": 1200,
+            "height": 800
+          }
+        },
+        {
+          "title": "Build",
+          "summary": "Engineering in short sprints, with a preview link for every change.",
+          "duration": "3 to 6 weeks",
+          "image": {
+            "src": "/images/process/build.svg",
+            "alt": "Build: a blue orb in a dark room",
+            "width": 1200,
+            "height": 800
+          }
+        },
+        {
+          "title": "Launch",
+          "summary": "Performance, accessibility and security checks, then a zero-downtime release.",
+          "duration": "1 week",
+          "image": {
+            "src": "/images/process/launch.svg",
+            "alt": "Launch: a red orb in a dark room",
+            "width": 1200,
+            "height": 800
+          }
+        },
+        {
+          "title": "Grow",
+          "summary": "Analytics, A/B tests and monthly improvements once the site is live.",
+          "duration": "Ongoing",
+          "image": {
+            "src": "/images/process/grow.svg",
+            "alt": "Grow: a green orb in a dark room",
+            "width": 1200,
+            "height": 800
+          }
+        }
+      ],
+      "strengths": [
+        {
+          "title": "Fast by default",
+          "summary": "Performance budgets run in CI, so every page stays quick on real phones."
+        },
+        {
+          "title": "Accessible to everyone",
+          "summary": "We design and test for WCAG 2.2 AA, keyboard and screen reader users."
+        },
+        {
+          "title": "3D that does not stutter",
+          "summary": "Real-time scenes with quality tiers and static fallbacks for every device."
+        },
+        {
+          "title": "One team, end to end",
+          "summary": "Strategy, design, engineering and support without hand-offs between vendors."
+        }
+      ],
+      "comparison": {
+        "criteria": ["Speed", "Flexibility", "Quality", "Scalability", "Affordability"],
+        "options": [
+          {
+            "name": "Our studio",
+            "summary": "Senior designers and engineers in one team, with a fixed scope, weekly previews and support after launch.",
+            "icon": "brand",
+            "values": [true, true, true, true, true]
+          },
+          {
+            "name": "In-house team",
+            "summary": "Full-time hires keep your brand consistent, but one or two people rarely cover design, code and 3D, and the salaries never stop.",
+            "icon": "team",
+            "values": [false, false, false, true, false]
+          },
+          {
+            "name": "Other agencies",
+            "summary": "Structured processes, but often long timelines, hand-offs between vendors and a high price for every change.",
+            "icon": "brush",
+            "values": [false, false, true, true, false]
+          },
+          {
+            "name": "Freelancers",
+            "summary": "Affordable and quick to start, but one person can only cover so much, and availability comes and goes.",
+            "icon": "person",
+            "values": [false, true, false, false, true]
+          },
+          {
+            "name": "Website builders",
+            "summary": "DIY builders are cheap and quick to start, but templates cap performance, accessibility and originality.",
+            "icon": "toolbox",
+            "values": [true, false, false, false, true]
+          }
+        ]
+      },
+      "tech": [
+        {
+          "name": "Next.js",
+          "role": "Framework",
+          "logo": {
+            "src": "/images/tech/nextjs.svg",
+            "alt": "Next.js",
+            "width": 120,
+            "height": 48
+          }
+        },
+        {
+          "name": "React",
+          "role": "UI library",
+          "logo": {
+            "src": "/images/tech/react.svg",
+            "alt": "React",
+            "width": 112,
+            "height": 48
+          }
+        },
+        {
+          "name": "TypeScript",
+          "role": "Language",
+          "logo": {
+            "src": "/images/tech/typescript.svg",
+            "alt": "TypeScript",
+            "width": 152,
+            "height": 48
+          }
+        },
+        {
+          "name": "Three.js",
+          "role": "3D engine",
+          "logo": {
+            "src": "/images/tech/threejs.svg",
+            "alt": "Three.js",
+            "width": 128,
+            "height": 48
+          }
+        },
+        {
+          "name": "NestJS",
+          "role": "API",
+          "logo": {
+            "src": "/images/tech/nestjs.svg",
+            "alt": "NestJS",
+            "width": 120,
+            "height": 48
+          }
+        },
+        {
+          "name": "PostgreSQL",
+          "role": "Database",
+          "logo": {
+            "src": "/images/tech/postgresql.svg",
+            "alt": "PostgreSQL",
+            "width": 152,
+            "height": 48
+          }
+        },
+        {
+          "name": "Tailwind CSS",
+          "role": "Styling",
+          "logo": {
+            "src": "/images/tech/tailwindcss.svg",
+            "alt": "Tailwind CSS",
+            "width": 168,
+            "height": 48
+          }
+        },
+        {
+          "name": "Figma",
+          "role": "Design",
+          "logo": {
+            "src": "/images/tech/figma.svg",
+            "alt": "Figma",
+            "width": 104,
+            "height": 48
+          }
+        }
+      ],
+      "about": {
+        "mission": "We help ambitious companies stand out on the web with sites that are fast, accessible and memorable.",
+        "body": "We are a small team of designers and engineers who care about craft. Every project gets senior people from the first workshop to launch day, and we stay on to help it grow.",
+        "teamPhoto": {
+          "src": "/images/about/team.svg",
+          "alt": "The team gathered around a desk with laptops and sketches",
+          "width": 1200,
+          "height": 800
+        }
+      },
+      "faqs": [
+        {
+          "question": "How much does a website cost?",
+          "answer": "Most marketing sites cost between $5k and $50k, depending on the number of pages, integrations and 3D. After a short call we send a fixed quote, so the price never changes without your approval."
+        },
+        {
+          "question": "How long does a project take?",
+          "answer": "A marketing site usually takes 6 to 10 weeks from the first workshop to launch. You get a preview link in the first week and see progress every week after that."
+        },
+        {
+          "question": "Do you offer support after launch?",
+          "answer": "Yes. Every project includes 30 days of free support, and most clients continue with a monthly plan for updates, monitoring and improvements."
+        },
+        {
+          "question": "Will the 3D work on phones?",
+          "answer": "Yes. Scenes adapt to the device: phones get a lighter version, and visitors who prefer reduced motion or save data see a static design instead."
+        },
+        {
+          "question": "Can we edit the content ourselves?",
+          "answer": "Yes. Your team edits pages, posts and case studies in a dashboard, and changes go live without a developer."
+        }
+      ],
+      "ctaBanner": {
+        "title": "Let's build something together",
+        "subtitle": "Tell us what you are building. We reply within one business day.",
+        "cta": {
+          "label": "Start a project",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  {
+    "type": "page",
+    "slug": "about",
+    "title": "About",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "eyebrow": "About",
+      "heading": "A small studio with big ambitions",
+      "intro": "We are designers and engineers who love the web. We build experiences that are bold to look at and simple to use.",
+      "highlights": [
+        {
+          "title": "Fast by default",
+          "summary": "Every project ships with performance budgets checked in CI, so speed never regresses."
+        },
+        {
+          "title": "Accessible to everyone",
+          "summary": "We design and test for WCAG 2.2 AA, keyboard and screen reader users from the first sprint."
+        },
+        {
+          "title": "Secure by design",
+          "summary": "Strict headers, validated input and least privilege everywhere, not as an afterthought."
+        }
+      ]
+    }
+  },
+  {
+    "type": "page",
+    "slug": "services",
+    "title": "Services",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "eyebrow": "Services",
+      "heading": "Everything you need to launch and grow",
+      "intro": "One team from first sketch to production, with performance and accessibility built in.",
+      "highlights": []
+    }
+  },
+  {
+    "type": "page",
+    "slug": "pricing",
+    "title": "Pricing",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "eyebrow": "Pricing",
+      "heading": "Pricing that fits the project",
+      "intro": "Every project is scoped and quoted individually, once we understand what you are building. These are the ranges we work with: pick the closest one when you get in touch.",
+      "highlights": []
+    }
+  },
+  {
+    "type": "page",
+    "slug": "portfolio",
+    "title": "Portfolio",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "eyebrow": "Portfolio",
+      "heading": "Work that moves people",
+      "intro": "Websites, web apps and 3D experiences, with the results they delivered.",
+      "highlights": []
+    }
+  },
+  {
+    "type": "page",
+    "slug": "blog",
+    "title": "Blog",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "eyebrow": "Blog",
+      "heading": "Notes from the studio",
+      "intro": "Notes on web design, engineering, 3D on the web and performance.",
+      "highlights": []
+    }
+  },
+  {
+    "type": "page",
+    "slug": "careers",
+    "title": "Careers",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "eyebrow": "Careers",
+      "heading": "Build the future of the web with us",
+      "intro": "A small, senior team that cares about craft, performance and accessibility.",
+      "highlights": []
+    }
+  },
+  {
+    "type": "page",
+    "slug": "contact",
+    "title": "Contact",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "eyebrow": "Contact",
+      "heading": "Let's build something great",
+      "intro": "Tell us about your project or ask a question. We reply within one business day.",
+      "highlights": []
+    }
+  },
+  {
+    "type": "legal-page",
+    "slug": "privacy",
+    "title": "Privacy policy",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "lastUpdated": "2026-10-01",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What we collect"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "When you contact us we collect the details you enter in the form: your name, email address, company and message. We also record the IP address of the request to protect the form against abuse."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Why we use it"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We use these details only to answer your request and, if you become a client, to deliver our services. We do not sell your data."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Analytics"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We use privacy-friendly analytics that do not set cookies or track you across websites."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Security checks"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Our forms use Cloudflare Turnstile to tell people and bots apart. Cloudflare processes technical data about your browser for this purpose."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Your rights"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You can ask us for a copy of your data or ask us to delete it at any time by writing to "
+              },
+              {
+                "type": "text",
+                "text": "hello@agency.com",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "mailto:hello@agency.com"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "legal-page",
+    "slug": "terms",
+    "title": "Terms of service",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "lastUpdated": "2026-10-01",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Using this website"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You may browse this website for personal and business purposes. Do not attempt to disrupt it, probe it for vulnerabilities without permission or submit automated requests."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Content"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "All content on this website belongs to Agency Ltd. unless stated otherwise. Sample projects are illustrations and not client endorsements."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Projects"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Client work is governed by a separate written agreement signed before work starts."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Liability"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The website is provided as is. We work hard to keep it accurate and available but cannot guarantee it is free of errors or interruptions."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Contact"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Questions about these terms: "
+              },
+              {
+                "type": "text",
+                "text": "hello@agency.com",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "mailto:hello@agency.com"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "legal-page",
+    "slug": "cookies",
+    "title": "Cookie notice",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "lastUpdated": "2026-10-01",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Our approach"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The public website does not use advertising or tracking cookies, so there is no cookie banner. Our analytics are cookieless."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Strictly necessary cookies"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Cloudflare may set short-lived security cookies to protect the site and our forms from abuse. The client portal, when it launches, uses secure session cookies that are needed to keep you signed in."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Questions"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Write to "
+              },
+              {
+                "type": "text",
+                "text": "hello@agency.com",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "mailto:hello@agency.com"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "service",
+    "slug": "web-design",
+    "title": "Web design",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "serviceKey": "web-design",
+      "summary": "Interfaces with a clear story and a distinctive look, designed mobile-first and accessible from day one.",
+      "deliverables": ["Discovery workshops", "Design systems", "Prototypes", "Usability testing"]
+    }
+  },
+  {
+    "type": "service",
+    "slug": "web-development",
+    "title": "Web development",
+    "sortOrder": 1,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "serviceKey": "web-development",
+      "summary": "Fast, secure sites and web apps on a modern stack, with performance budgets enforced in CI.",
+      "deliverables": ["Next.js front ends", "APIs and integrations", "CMS setup", "Hosting and CI"]
+    }
+  },
+  {
+    "type": "service",
+    "slug": "3d-experiences",
+    "title": "3D web experiences",
+    "sortOrder": 2,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "serviceKey": "3d-experiences",
+      "summary": "Real-time 3D that runs smoothly on phones: product configurators, scroll stories and interactive heroes.",
+      "deliverables": ["WebGL scenes", "Model optimisation", "Scroll animation", "Fallbacks"]
+    }
+  },
+  {
+    "type": "service",
+    "slug": "branding",
+    "title": "Branding",
+    "sortOrder": 3,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "serviceKey": "branding",
+      "summary": "Identities that hold up from a favicon to a billboard, with guidelines your team can use.",
+      "deliverables": ["Strategy", "Logo and identity", "Motion language", "Brand guidelines"]
+    }
+  },
+  {
+    "type": "service",
+    "slug": "seo",
+    "title": "SEO and performance",
+    "sortOrder": 4,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "serviceKey": "seo",
+      "summary": "Technical SEO, Core Web Vitals and structured data, so the work is found and loads in a blink.",
+      "deliverables": ["Technical audits", "Core Web Vitals", "Structured data", "Content strategy"]
+    }
+  },
+  {
+    "type": "team-member",
+    "slug": "alex-morgan",
+    "title": "Alex Morgan",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "role": "Founder and creative director",
+      "photo": {
+        "src": "/images/team/member-1.jpg",
+        "alt": "Portrait of Alex Morgan",
+        "width": 1024,
+        "height": 1024
+      },
+      "socials": {
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "whatsapp": "https://wa.me/"
+      }
+    }
+  },
+  {
+    "type": "team-member",
+    "slug": "sam-rivera",
+    "title": "Sam Rivera",
+    "sortOrder": 1,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "role": "Lead engineer",
+      "photo": {
+        "src": "/images/team/member-2.jpg",
+        "alt": "Portrait of Sam Rivera",
+        "width": 1024,
+        "height": 1024
+      },
+      "socials": {
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "whatsapp": "https://wa.me/"
+      }
+    }
+  },
+  {
+    "type": "team-member",
+    "slug": "jordan-lee",
+    "title": "Jordan Lee",
+    "sortOrder": 2,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "role": "3D and motion designer",
+      "photo": {
+        "src": "/images/team/member-3.jpg",
+        "alt": "Portrait of Jordan Lee",
+        "width": 804,
+        "height": 1620
+      },
+      "socials": {
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "whatsapp": "https://wa.me/"
+      }
+    }
+  },
+  {
+    "type": "team-member",
+    "slug": "taylor-kim",
+    "title": "Taylor Kim",
+    "sortOrder": 3,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "role": "Product designer",
+      "photo": {
+        "src": "/images/team/member-4.jpg",
+        "alt": "Portrait of Taylor Kim",
+        "width": 1024,
+        "height": 1024
+      },
+      "socials": {
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "whatsapp": "https://wa.me/"
+      }
+    }
+  },
+  {
+    "type": "testimonial",
+    "slug": "priya-natarajan",
+    "title": "Priya Natarajan, Vertex Freight",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "quote": "They rebuilt our site in six weeks and quote requests went up by a third. The team explained every decision.",
+      "author": "Priya Natarajan",
+      "role": "Head of marketing",
+      "company": "Vertex Freight",
+      "photo": {
+        "src": "/images/testimonials/priya-natarajan.svg",
+        "alt": "Portrait of Priya Natarajan",
+        "width": 600,
+        "height": 800
+      },
+      "rating": 5,
+      "video": {
+        "youtubeId": "aqz-KE-bpKQ",
+        "poster": {
+          "src": "/images/testimonials/vertex-freight.svg",
+          "alt": "Priya Natarajan, Vertex Freight",
+          "width": 1280,
+          "height": 720
+        }
+      }
+    }
+  },
+  {
+    "type": "testimonial",
+    "slug": "daniel-okafor",
+    "title": "Daniel Okafor, Lumen Labs",
+    "sortOrder": 1,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "quote": "The configurator runs smoothly on every phone we tested, and our add-to-cart rate jumped in the first month.",
+      "author": "Daniel Okafor",
+      "role": "E-commerce lead",
+      "company": "Lumen Labs",
+      "photo": {
+        "src": "/images/testimonials/daniel-okafor.png",
+        "alt": "Portrait of Daniel Okafor",
+        "width": 1080,
+        "height": 720
+      },
+      "rating": 5,
+      "video": {
+        "youtubeId": "aqz-KE-bpKQ",
+        "poster": {
+          "src": "/images/testimonials/lumen-labs.svg",
+          "alt": "Daniel Okafor, Lumen Labs",
+          "width": 1280,
+          "height": 720
+        }
+      }
+    }
+  },
+  {
+    "type": "testimonial",
+    "slug": "marta-kowalski",
+    "title": "Marta Kowalski, Halcyon",
+    "sortOrder": 2,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "quote": "Clear estimates, weekly previews and no surprises on the invoice. Rare in this industry.",
+      "author": "Marta Kowalski",
+      "role": "Founder",
+      "company": "Halcyon",
+      "photo": {
+        "src": "/images/testimonials/marta-kowalski.svg",
+        "alt": "Portrait of Marta Kowalski",
+        "width": 600,
+        "height": 800
+      },
+      "rating": 5
+    }
+  },
+  {
+    "type": "testimonial",
+    "slug": "chen-wei",
+    "title": "Chen Wei, Orbitra",
+    "sortOrder": 3,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "quote": "Our Lighthouse scores went from the 50s to 98 and organic traffic followed.",
+      "author": "Chen Wei",
+      "role": "Product manager",
+      "company": "Orbitra",
+      "photo": {
+        "src": "/images/testimonials/chen-wei.png",
+        "alt": "Portrait of Chen Wei",
+        "width": 403,
+        "height": 627
+      },
+      "rating": 5
+    }
+  },
+  {
+    "type": "testimonial",
+    "slug": "sofia-alvarez",
+    "title": "Sofia Alvarez, Northwind",
+    "sortOrder": 4,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "quote": "They treated accessibility as a requirement, not a checkbox. Our users noticed.",
+      "author": "Sofia Alvarez",
+      "role": "Director of digital",
+      "company": "Northwind",
+      "photo": {
+        "src": "/images/testimonials/sofia-alvarez.svg",
+        "alt": "Portrait of Sofia Alvarez",
+        "width": 600,
+        "height": 800
+      },
+      "rating": 5
+    }
+  },
+  {
+    "type": "pricing-plan",
+    "slug": "launch",
+    "title": "Launch",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "summary": "A focused marketing site to get a new product or company online.",
+      "priceNote": "$5k to $15k",
+      "features": [
+        "Up to 8 pages",
+        "Design system and CMS",
+        "Analytics and SEO setup",
+        "30 days of support"
+      ],
+      "highlighted": false,
+      "cta": {
+        "label": "Discuss a launch",
+        "href": "/contact"
+      }
+    }
+  },
+  {
+    "type": "pricing-plan",
+    "slug": "growth",
+    "title": "Growth",
+    "sortOrder": 1,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "summary": "A larger site with integrations, motion and a content plan.",
+      "priceNote": "$15k to $50k",
+      "features": [
+        "Custom design and motion",
+        "Integrations and forms",
+        "Performance budgets in CI",
+        "Monthly improvements"
+      ],
+      "highlighted": true,
+      "cta": {
+        "label": "Discuss a project",
+        "href": "/contact"
+      }
+    }
+  },
+  {
+    "type": "pricing-plan",
+    "slug": "flagship",
+    "title": "Flagship",
+    "sortOrder": 2,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "summary": "Web apps and real-time 3D experiences with a dedicated team.",
+      "priceNote": "$50k or more",
+      "features": [
+        "Web apps and dashboards",
+        "Real-time 3D and configurators",
+        "Dedicated senior team",
+        "Ongoing partnership"
+      ],
+      "highlighted": false,
+      "cta": {
+        "label": "Talk to us",
+        "href": "/contact"
+      }
+    }
+  },
+  {
+    "type": "case-study",
+    "slug": "fintech-dashboard",
+    "title": "A real-time investing dashboard",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "description": "Live portfolio charts and a calm, accessible interface for a fintech app with thousands of daily users.",
+      "date": "2026-04-08",
+      "tags": ["Web app", "Data visualisation", "Next.js"],
+      "client": "Sample: fintech",
+      "services": ["web-design", "web-development"],
+      "results": [
+        "Time to first chart down from 4.1 to 1.2 seconds",
+        "Support tickets about the dashboard down 40%",
+        "WCAG 2.2 AA across every chart and table"
+      ],
+      "cover": {
+        "src": "/images/work/fintech-dashboard.svg",
+        "alt": "Abstract rising line chart in cyan light",
+        "width": 1200,
+        "height": 800
+      },
+      "featured": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The brief"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "An investing app had a dashboard that loaded slowly and overwhelmed new users with numbers."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What we built"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A design system for charts, tables and alerts, tested with screen reader users."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Streaming updates that only re-render the values that changed."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A simplified first view with progressive detail for experienced investors."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "This is a sample project that shows the kind of work we do."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "case-study",
+    "slug": "logistics-rebrand",
+    "title": "Rebrand and marketing site",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "description": "A new identity, motion language and a fast marketing site with a quote request flow.",
+      "date": "2026-06-12",
+      "tags": ["Branding", "Web design"],
+      "client": "Sample: logistics",
+      "services": ["branding", "web-design", "seo"],
+      "results": [
+        "Quote requests up 32% in the first quarter",
+        "Lighthouse performance 98 on mobile",
+        "One design system shared by web, print and vehicles"
+      ],
+      "cover": {
+        "src": "/images/work/logistics-rebrand.svg",
+        "alt": "Abstract route lines forming a logo mark",
+        "width": 1200,
+        "height": 800
+      },
+      "featured": true,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The brief"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A regional logistics company had outgrown its look. The site was slow, hard to update and buried the quote form."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What we built"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A brand identity built around routes and motion, with guidelines for every touchpoint."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A static marketing site with a three-step quote request flow."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Structured data for every service area, so the right page shows up in search."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Outcome"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Clearer positioning, a faster site and a quote flow that converts."
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "This is a sample project that shows the kind of work we do."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "case-study",
+    "slug": "product-configurator",
+    "title": "A 3D product configurator",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "description": "Real-time materials and colours for a headphone launch, tuned to stay smooth on mid-range phones.",
+      "date": "2026-08-20",
+      "tags": ["3D", "E-commerce", "Next.js"],
+      "client": "Sample: consumer electronics",
+      "services": ["3d-experiences", "web-development"],
+      "results": [
+        "Configurator interactive in under 2 seconds on a mid-range phone",
+        "Add-to-cart rate up 18% against the static product page",
+        "60 fps on desktop, 30+ fps on mobile"
+      ],
+      "cover": {
+        "src": "/images/work/product-configurator.svg",
+        "alt": "Abstract render of headphones in cyan and violet light",
+        "width": 1200,
+        "height": 800
+      },
+      "featured": true,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The brief"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Launch a new pair of headphones with a configurator that lets buyers try every colour and finish, on any device, without a plugin or a slow first load."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What we built"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A WebGL scene with physically based materials, compressed with Draco and KTX2."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A configurator state that lives in the URL, so every combination can be shared."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A static fallback image for reduced motion, data saver and devices without WebGL."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "How we kept it fast"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The 3D chunk loads after the product copy, and the scene drops to a lighter quality tier when the frame rate falls. The page itself is static and served from the CDN."
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "This is a sample project that shows the kind of work we do."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "case-study",
+    "slug": "travel-booking",
+    "title": "A faster travel booking flow",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "description": "A redesigned search and checkout for a boutique travel brand, with an interactive 3D globe on the landing page.",
+      "date": "2026-02-17",
+      "tags": ["E-commerce", "3D", "SEO"],
+      "client": "Sample: travel",
+      "services": ["web-design", "3d-experiences", "seo"],
+      "results": [
+        "Completed bookings up 27% after launch",
+        "Checkout shortened from five steps to three",
+        "Organic search traffic up 45% in six months"
+      ],
+      "cover": {
+        "src": "/images/work/travel-booking.svg",
+        "alt": "Abstract globe with a paper plane in cyan and violet light",
+        "width": 1200,
+        "height": 800
+      },
+      "featured": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The brief"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A travel brand was losing customers between search and payment, and its landing page did not reflect the experience it sold."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What we built"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A three-step checkout with saved travellers and clear prices from the first screen."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A lightweight 3D globe that shows every destination, with a static map fallback."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Structured data and fast destination pages, so each trip ranks on its own."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "This is a sample project that shows the kind of work we do."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "blog-post",
+    "slug": "3d-on-mid-range-phones",
+    "title": "Keeping 3D smooth on mid-range phones",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "description": "Five habits that keep real-time WebGL scenes at 30+ frames per second on the phones most visitors actually own.",
+      "date": "2026-09-30",
+      "tags": ["3D", "WebGL", "Performance"],
+      "author": "Agency studio",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A 3D hero that stutters is worse than no 3D at all. These are the rules we apply on every scene."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "1. Load it last"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The scene is a separate chunk that downloads after the page is usable. Visitors read the headline first; the particles arrive a moment later."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "2. One draw call where you can"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hundreds of particles share one instanced mesh. Each extra draw call costs time on the CPU, and mobile CPUs have little to spare."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "3. Measure, then degrade"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We start on a quality tier picked from the device's cores and memory, then drop to a lighter tier when the frame rate falls."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "4. Stop when nobody is looking"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "When the hero scrolls out of view or the tab is hidden, the render loop stops completely."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "5. Respect the visitor"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "With "
+              },
+              {
+                "type": "text",
+                "text": "reduced motion",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " or "
+              },
+              {
+                "type": "text",
+                "text": "data saver",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " switched on, we show a static illustration instead. It is the same story, without the cost."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "blog-post",
+    "slug": "why-we-prerender-everything",
+    "title": "Why we prerender every marketing page",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "description": "Static pages load faster, cost less and are easier to secure. Here is how we keep a 3D-heavy site static without giving up interactivity.",
+      "date": "2026-10-14",
+      "tags": ["Performance", "Next.js", "Security"],
+      "author": "Agency studio",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Most marketing pages do not change between two visitors. So we build them once, at deploy time, and serve the same HTML from a CDN close to every reader."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What static buys you"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Speed.",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " The first byte comes from the edge, not from a server that renders on demand."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Resilience.",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " A traffic spike hits the CDN cache, not the application."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A smaller attack surface.",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " There is no per-request rendering to exploit."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interactivity still works"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Static does not mean inert. Forms post through Server Actions, the 3D hero loads after the main content, and a strict "
+              },
+              {
+                "type": "text",
+                "text": "Content Security Policy",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "#a-strict-policy-for-static-html"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " still applies."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "A strict policy for static HTML"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Nonce-based policies need a fresh nonce per request, which forces dynamic rendering. Instead, we hash every inline script at build time and send the matching "
+              },
+              {
+                "type": "text",
+                "text": "script-src",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " hashes for each page."
+              }
+            ]
+          },
+          {
+            "type": "codeBlock",
+            "attrs": {
+              "language": "txt"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "script-src 'self' 'sha256-…' https://challenges.cloudflare.com"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The result: every page stays on the CDN, and the browser refuses to run any script we did not ship. Read more about "
+              },
+              {
+                "type": "text",
+                "text": "how we work",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "/services"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "blog-post",
+    "slug": "keyboard-first-design",
+    "title": "Designing for the keyboard first",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-22T09:00:00.000Z",
+    "updatedAt": "2026-10-22T09:00:00.000Z",
+    "data": {
+      "description": "If every control works with Tab, Enter and Escape, it works for screen readers, switch users and power users too. Here is our checklist.",
+      "date": "2026-10-22",
+      "tags": ["Accessibility", "Design"],
+      "author": "Agency studio",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We test every new component with the keyboard before we touch the mouse. It is the fastest way to find the problems that also break screen readers and switch devices."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Our checklist"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Every control can be reached with Tab, focus is always visible, and dialogs close with Escape."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Test with real tools"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Automated audits catch about a third of the issues. The rest we find by using the page with a screen reader and the keyboard."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "job",
+    "slug": "3d-motion-designer",
+    "title": "3D Motion Designer",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "description": "Design real-time 3D scenes and motion systems for websites that need to run smoothly on every device.",
+      "tags": ["3D", "Motion", "Blender"],
+      "location": {
+        "type": "remote",
+        "country": "DE"
+      },
+      "employmentType": "CONTRACTOR",
+      "department": "Design",
+      "datePosted": "2026-10-08",
+      "validThrough": "2027-12-31",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "About the role"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You will design the 3D scenes and motion language of our client sites, working closely with the engineers who bring them to the browser."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What you will do"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Model, texture and light scenes that stay within a strict polygon and texture budget."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Define motion principles that also work with reduced motion switched on."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Prepare assets for the web: Draco compression, KTX2 textures and clean exports."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What we are looking for"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A portfolio of real-time 3D work (Blender, Cinema 4D or similar)."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Understanding of how file size and draw calls affect performance on phones."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Clear communication in English."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "job",
+    "slug": "senior-frontend-engineer",
+    "title": "Senior Frontend Engineer",
+    "sortOrder": 0,
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z",
+    "data": {
+      "description": "Build fast, accessible marketing sites and web apps with Next.js, React and WebGL in a small, senior team.",
+      "tags": ["Next.js", "React", "TypeScript"],
+      "location": {
+        "type": "hybrid",
+        "city": "Berlin",
+        "country": "DE"
+      },
+      "employmentType": "FULL_TIME",
+      "department": "Engineering",
+      "datePosted": "2026-10-01",
+      "validThrough": "2027-12-31",
+      "salary": {
+        "currency": "EUR",
+        "min": 70000,
+        "max": 90000,
+        "unit": "YEAR"
+      },
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "About the role"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You will lead the front end of client projects, from the first prototype to launch, and help shape how the studio builds for the web."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What you will do"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Build static-first Next.js sites with strict performance and accessibility budgets."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Pair with designers on motion and 3D, and make it run smoothly on real phones."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Review code, write tests and improve our shared tooling."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "What we are looking for"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Several years of professional experience with React and TypeScript."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A habit of measuring performance and fixing what the numbers show."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Care for accessibility (WCAG 2.2 AA) as part of the definition of done."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Nice to have"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Experience with Three.js or React Three Fiber."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Experience with design systems."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]
