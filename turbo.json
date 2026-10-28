@@ -1,0 +1,35 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "stream",
+  "globalPassThroughEnv": ["CI"],
+  "globalDependencies": ["shared/scripts/**"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "!**/*.test.ts", "!**/*.test.tsx", "!**/*.md"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+    },
+    "typegen": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/types/**", "next-env.d.ts"]
+    },
+    "typecheck": {
+      "dependsOn": ["^build", "typegen"],
+      "outputs": []
+    },
+    "lint": {
+      "dependsOn": ["^build", "typegen"],
+      "outputs": []
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"],
+      "passThroughEnv": ["DOCKER_HOST", "TESTCONTAINERS_*"]
+    },
+    "dev": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

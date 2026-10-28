@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Internal library (ES module build, consumed by bundlers such as Next.js)",
+  "extends": "./library.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "outDir": "${configDir}/dist/esm"
+  }
+}

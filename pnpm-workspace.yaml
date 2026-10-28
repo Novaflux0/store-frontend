@@ -1,0 +1,98 @@
+packages:
+  - storefront
+  - shared/*
+
+# --- Supply-chain hardening (architecture doc §9.12) -------------------------
+# Never resolve a version published less than 3 days ago. Freshly hijacked
+# packages are usually detected and unpublished within that window. Because the
+# value is set explicitly, pnpm also treats it as strict (no silent exceptions).
+minimumReleaseAge: 4320 # minutes (3 days)
+
+# Refuse a version whose publish provenance/trust level is weaker than an
+# earlier version of the same package (e.g. a trusted-publisher package that is
+# suddenly published from a personal token).
+trustPolicy: no-downgrade
+# Only enforce it for versions published in the last 365 days: a takeover shows up
+# as a fresh release, while older majors (e.g. semver@6) predate provenance and
+# would otherwise be false positives.
+trustPolicyIgnoreAfter: 525600 # minutes (365 days)
+
+# Dependency install scripts are denied by default. Only packages listed here
+# may run them. pnpm 11+ replaced `onlyBuiltDependencies` with `allowBuilds`.
+# Entries for packages that are not installed yet are harmless; they pre-approve
+# what backend (Prisma, argon2, SWC) and storefront/admin (sharp, esbuild, ESLint
+# resolvers) will add. `false` entries are explicit denials: the packages work
+# without their install scripts, and listing them keeps pnpm from asking again.
+allowBuilds:
+  '@prisma/engines': true
+  '@swc/core': true
+  argon2: true
+  esbuild: true
+  prisma: true
+  sharp: true
+  unrs-resolver: true
+  # swagger-ui-dist (via @nestjs/swagger): install-time usage telemetry only.
+  '@scarf/scarf': false
+  # Optional native speedup for ssh2 (via testcontainers); pure JS fallback.
+  cpu-features: false
+  # Optional native msgpack speedup for bullmq; pure JS fallback.
+  msgpackr-extract: false
+  # Postinstall only checks the installed version; nothing is compiled.
+  protobufjs: false
+  # Optional native crypto binding (via testcontainers); pure JS fallback.
+  ssh2: false
+
+# eslint-plugin-react 7.37 and eslint-plugin-jsx-a11y 6.10 have not widened their
+# peer range to ESLint 10 yet. Both were verified to work on ESLint 10 (ESLint 9 is
+# end-of-life), so accept it explicitly instead of printing peer warnings.
+peerDependencyRules:
+  allowedVersions:
+    eslint-plugin-jsx-a11y>eslint: '10'
+    eslint-plugin-react>eslint: '10'
+
+# Security fixes for transitive dependencies (pnpm audit, high). Scoped to the
+# parent so nothing else moves. Drop each one once the parent ships the fix:
+# Prisma 7.10.1 does, but it is blocked by trustPolicy (weaker provenance).
+overrides:
+  # GHSA-3f6p-5ww8-9rcr. Prisma bundles the MySQL driver; this repo uses PostgreSQL.
+  'prisma>mysql2': ^3.22.0
+  # GHSA-ggr8-5vv4-36mx. @prisma/config 7.10.1 itself moved to deepmerge-ts 8.
+  '@prisma/config>deepmerge-ts': ^8.0.0
+  # GHSA-27r3-jxmh-p828. express 5.3.0 still accepts body-parser ^2.3.0.
+  'express>body-parser': ^2.4.0
+  # GHSA-q7qp-rjg7-q26m. @nestjs/platform-express 11.2.8 still pins multer 2.4.0.
+  '@nestjs/platform-express>multer': ^2.5.0
+
+# Advisories with no patched release. Each entry needs a reason; remove it once
+# a fix exists.
+auditConfig:
+  ignoreGhsas:
+    # braces <=3.0.3 (no fix): reached only through @next/eslint-plugin-next >
+    # fast-glob > micromatch at lint time, on repository-controlled glob patterns.
+    - GHSA-vfj7-8cjw-p6xm
+
+# Shared versions. Workspace packages reference these with "catalog:" so every
+# package uses the same toolchain. Major pins: TypeScript 5.9 (the doc pins it;
+# TS 6/7 are not supported by typescript-eslint yet), Zod 4.
+catalog:
+  '@commitlint/cli': ^21.0.0
+  '@commitlint/config-conventional': ^21.0.0
+  '@eslint/js': ^10.0.1
+  '@types/node': ^24.10.0
+  '@vitest/coverage-v8': ^5.0.3
+  eslint: ^10.12.0
+  eslint-config-prettier: ^10.1.8
+  eslint-plugin-jsx-a11y: ^6.10.2
+  eslint-plugin-react: ^7.37.5
+  eslint-plugin-react-hooks: ^7.1.0
+  eslint-plugin-security: ^4.0.0
+  globals: ^17.0.0
+  husky: ^9.1.7
+  lint-staged: ^17.0.0
+  prettier: ^3.9.0
+  turbo: ^2.11.0
+  typescript: ~5.9.3
+  typescript-eslint: ^8.71.0
+  vite: ^8.1.0
+  vitest: ^5.0.3
+  zod: ^4.6.0

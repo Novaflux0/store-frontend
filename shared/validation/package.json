@@ -1,0 +1,59 @@
+{
+  "name": "@agency/validation",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared Zod v4 schemas: the wire contract for web forms and the NestJS API.",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "sideEffects": false,
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    },
+    "./constants": {
+      "import": {
+        "types": "./dist/esm/constants.d.ts",
+        "default": "./dist/esm/constants.js"
+      },
+      "require": {
+        "types": "./dist/cjs/constants.d.ts",
+        "default": "./dist/cjs/constants.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node ../scripts/build-package.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "test": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@agency/config": "workspace:*",
+    "@agency/types": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@agency/config-eslint": "workspace:*",
+    "@agency/config-typescript": "workspace:*",
+    "@types/node": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  }
+}

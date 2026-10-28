@@ -1,0 +1,20 @@
+# Gitleaks configuration: the default rules plus an allowlist of known test
+# fixtures. Picked up automatically from the repository root by the CI secret
+# scans (ci.yml, ci-cd.yml). Allowlist exact values only, never whole paths, so a
+# real secret pasted into a test file is still caught.
+title = "nova-full-stack"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Non-secret test fixtures"
+regexTarget = "match"
+regexes = [
+  # UUIDv7 idempotency key used by the storefront form tests.
+  '''01890a5d-ac96-774b-bcce-b302099a8057''',
+  # 43-character base64url dummy token used by the shared validation tests.
+  '''abcdefghijklmnopqrstuvwxyzABCDEFGHIJ0123-_Z''',
+  # Sequential-hex dummy field encryption key in backend/src/testing/test-env.ts.
+  '''0123456789abcdef''',
+]

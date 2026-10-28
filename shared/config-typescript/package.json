@@ -1,0 +1,21 @@
+{
+  "name": "@agency/config-typescript",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared strict tsconfig presets (architecture doc §13.1).",
+  "license": "UNLICENSED",
+  "files": [
+    "base.json",
+    "library.json",
+    "library-esm.json",
+    "nestjs.json",
+    "nextjs.json"
+  ],
+  "exports": {
+    "./base.json": "./base.json",
+    "./library.json": "./library.json",
+    "./library-esm.json": "./library-esm.json",
+    "./nestjs.json": "./nestjs.json",
+    "./nextjs.json": "./nextjs.json"
+  }
+}

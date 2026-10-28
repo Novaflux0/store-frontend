@@ -1,0 +1,20 @@
+# Generated or vendored output
+node_modules/
+pnpm-lock.yaml
+dist/
+.next/
+out/
+build/
+coverage/
+.turbo/
+generated/
+playwright-report/
+test-results/
+*.tsbuildinfo
+next-env.d.ts
+
+# Binary / source documents
+*.docx
+
+# Agent workspace
+.claude/

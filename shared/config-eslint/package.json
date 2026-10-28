@@ -1,0 +1,38 @@
+{
+  "name": "@agency/config-eslint",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared ESLint flat configs: base, next (React) and nest.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./base": "./base.js",
+    "./next": "./next.js",
+    "./nest": "./nest.js"
+  },
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --max-warnings=0"
+  },
+  "dependencies": {
+    "@eslint/js": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-jsx-a11y": "catalog:",
+    "eslint-plugin-react": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-security": "catalog:",
+    "globals": "catalog:",
+    "typescript-eslint": "catalog:"
+  },
+  "devDependencies": {
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^10.12.0",
+    "typescript": ">=5.9.0 <6.0.0"
+  }
+}

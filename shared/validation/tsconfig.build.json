@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@agency/config-typescript/library.json",
+  "include": ["src"],
+  "exclude": ["src/**/*.test.ts"]
+}
